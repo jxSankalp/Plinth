@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import "./page.css";
-import { Glow } from "../assets/svg"; // Ensure Glow is an SVG file
+import { Glow } from "../assets/svg"; 
 
 function throttle(func, delay) {
   let lastCall = 0;
@@ -61,7 +61,7 @@ const Page = () => {
       <Navbar />
 
       <div className=" h-screen flex flex-col  relative">
-        {/* Glow SVG on top of the text */}
+        
         <div className="overflow-hidden glow1 top-[30rem] w-[60rem] h-[65rem]">
           <img
             src={Glow}
