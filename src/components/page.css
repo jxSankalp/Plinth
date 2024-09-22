@@ -102,50 +102,34 @@
     color: transparent;
   }
 
-/* Media query for screens with a max width of 768px (tablet and mobile) */
-/* @media screen and (max-width: 768px) {
-  
-  .text- {
-    font-size: 8rem;  
-    letter-spacing: 0.7rem;
-  }
+/* Extra small devices (phones, 320px to 575px) */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* Styles for screens between 320px and 575px */
+}
 
-  .xxv-text {
-    font-size: 7rem;
-  }
+/* Small devices (phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Styles for screens between 576px and 767px */
+}
 
-  .text- {
-    font-size: 3rem;  
-  }
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for screens between 768px and 991px */
+}
 
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for screens between 992px and 1199px */
+}
 
-  .absolute {
-    top: 40%;  
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+/* Extra large devices (large desktops, 1200px to 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  /* Styles for screens between 1200px and 1399px */
+}
 
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Styles for screens 1400px and up */
+}
 
-  .xxv-container {
-    padding: 10px 0;
-  }
-
-  
-  .glow1 {
-    top: 40%;
-    width: 90vw;  
-    height: auto; 
-    transform: translate(-50%, -50%) translateY(-10%);  
-  }
-
-  
-  .transform {
-    perspective: 800px;
-  }
-
-  .h- {
-    height: 4rem;
-  }
-} */
  
-/*this is jsut a demo hwo you write, don't use these as literals please*/
