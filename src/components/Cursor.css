@@ -1,0 +1,39 @@
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #cdcccc;
+  transition: all 200ms ease-out; /* Increased duration to 200ms */
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 99;
+}
+
+.cursor2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #16d656;
+  opacity: 0.7;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 300ms ease, height 300ms ease, opacity 300ms ease; /* Duration increased to 300ms */
+  z-index: 100;
+}
+
+.cursor.click {
+  width: 70px; /* Scale up on click */
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cursorinnerhover {
+  width: 50px; /* Inner cursor size on hover */
+  height: 50px;
+  opacity: 0.7;
+  
+}
