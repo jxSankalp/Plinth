@@ -81,6 +81,15 @@
     }
   }
   
+  .glow1 {
+    position: absolute;  /* Make sure the glow element is absolutely positioned */
+    z-index: 10;         /* Ensure it is on top of other elements */
+    top: 10%;            /* Adjust the top position */
+    left: 50%;   
+    transform: translate(-50%, -50%) translateY(-20%);       /* Adjust the left position */
+    /* transform: translate(-50%, -50%); Center the SVG on top of the text */
+  }
+  
   .animate-reveal {
     animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1);
   }

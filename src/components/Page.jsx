@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import "./page.css";
+import { Glow } from "../assets/svg"; // Ensure Glow is an SVG file
 
 function throttle(func, delay) {
   let lastCall = 0;
@@ -20,7 +21,6 @@ const Page = () => {
   const [showXXV, setShowXXV] = useState(false);
   const [showComingSoon, setShowComingSoon] = useState(false);
 
-  // Handle tilt effect on mouse move
   const onMouseMove = useCallback(
     throttle((e) => {
       const card = e.currentTarget;
@@ -41,14 +41,13 @@ const Page = () => {
     setRotate({ x: 0, y: 0 });
   };
 
-
   useEffect(() => {
     const xxvTimeout = setTimeout(() => {
-      setShowXXV(true); 
+      setShowXXV(true);
     }, 1000);
 
     const comingSoonTimeout = setTimeout(() => {
-      setShowComingSoon(true); 
+      setShowComingSoon(true);
     }, 2500);
 
     return () => {
@@ -61,7 +60,16 @@ const Page = () => {
     <>
       <Navbar />
 
-      <div className="bg-black h-screen flex flex-col justify-center items-center relative">
+      <div className=" h-screen flex flex-col  relative">
+        {/* Glow SVG on top of the text */}
+        <div className="overflow-hidden glow1 top-[30rem] w-[60rem] h-[65rem]">
+          <img
+            src={Glow}
+            alt="Plinth Glow"
+            className="h-full w-full"
+          />
+        </div>
+
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pt-[1rem]">
           
           <div
@@ -97,7 +105,6 @@ const Page = () => {
             </h1>
           </div>
 
-          
           <motion.div
             initial={{ opacity: 0, filter: "blur(10px)" }}
             animate={
