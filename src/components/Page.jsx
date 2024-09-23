@@ -78,7 +78,7 @@ const Page = () => {
               transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg) scale3d(1, 1, 1)`,
               transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
             }}
-            className="text-transparent bg-Green-gradient bg-clip-text text-[14rem] font-extrabold font-akira leading-none tracking-[1.7rem]"
+            className="text-transparent bg-Green-gradient bg-clip-text text-[14rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem] font-extrabold font-akira leading-none tracking-[1.7rem]"
           >
             PLINTH
           </div>

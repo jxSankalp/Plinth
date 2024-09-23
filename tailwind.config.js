@@ -28,6 +28,13 @@ export default {
         fadeInScale: "fadeInScale 2.0s ease-in-out forwards",
       },
     },
+    screens: {
+      sm: "576px", // Small devices (phones, ≥ 576px)
+      md: "768px", // Medium devices (tablets, ≥ 768px)
+      lg: "992px", // Large devices (desktops, ≥ 992px)
+      xl: "1200px", // Extra large devices (large desktops, ≥ 1200px)
+      "2xl": "1400px", // Extra extra large devices (larger desktops, ≥ 1400px)
+    },
   },
   plugins: [],
 };

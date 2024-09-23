@@ -62,8 +62,13 @@ const GalaxyBackground = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    resizeCanvas(); // Set initial size
+    window.addEventListener("resize", resizeCanvas); // Update on resize
 
     const animateGalaxy = galaxySpiral(canvas, ctx, 0.0003);
 
@@ -74,9 +79,10 @@ const GalaxyBackground = () => {
 
     animate();
 
-    // Clean up the animation on component unmount
+    // Clean up event listener and animation on component unmount
     return () => {
       cancelAnimationFrame(animationRef.current);
+      window.removeEventListener("resize", resizeCanvas);
     };
   }, []);
 
