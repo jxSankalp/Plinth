@@ -70,7 +70,7 @@ const Page = () => {
           />
         </div>
 
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pt-[1rem] z-20">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pt-4 z-20">
           <div
             onMouseMove={onMouseMove}
             onMouseLeave={onMouseLeave}
@@ -78,13 +78,13 @@ const Page = () => {
               transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg) scale3d(1, 1, 1)`,
               transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
             }}
-            className="text-transparent bg-Green-gradient bg-clip-text text-[14rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem] font-extrabold font-akira leading-none tracking-[1.7rem]"
+            className="text-transparent bg-Green-gradient bg-clip-text text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem] font-extrabold font-akira leading-none tracking-[0.5rem] sm:tracking-[1.2rem] md:tracking-[1.7rem]"
           >
             PLINTH
           </div>
 
           <div className="xxv-container">
-            <h1 className="xxv-text">
+            <h1 className="xxv-text text-[4rem] sm:text-[3rem] md:text-[5.5rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem]">
               {['X', 'X', 'V'].map((letter, index) => (
                 <motion.span 
                   key={index} 
@@ -112,9 +112,9 @@ const Page = () => {
                 : { opacity: 0, filter: "blur(10px)" }
             }
             transition={{ duration: 1.5 }}
-            className="h-[6rem] flex items-center justify-center"
+            className="h-[4rem] sm:h-[5rem] flex items-center justify-center"
           >
-            <h1 className="text-white text-[5rem] tracking-[1.5rem] font-kodchasan">coming soon</h1>
+            <h1 className="text-white text-[1rem] sm:text-[1.5rem] md:text-[2rem] tracking-[0.5rem] sm:tracking-[1rem] md:tracking-[1.5rem] font-kodchasan">coming soon</h1>
           </motion.div>
         </div>
       </div>
