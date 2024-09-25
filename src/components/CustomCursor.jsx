@@ -36,8 +36,8 @@ const CustomCursor = () => {
 
   return (
     <>
-      <div className="cursor"></div>
-      <div className="cursor2"></div>
+      <div className="cursor hidden md:block"></div>
+      <div className="cursor2 hidden md:block"></div>
     </>
   );
 };

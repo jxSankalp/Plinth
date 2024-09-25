@@ -1,0 +1,165 @@
+/* Base styles for the footer */
+.Footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(42, 42, 42, 0.63);
+  padding: 2rem 1.5rem; 
+  color: white;
+  box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.5);
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100vw;
+  gap: 20px; 
+  position: absolute;
+}
+
+.Footer_slide {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container1, .gdg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fest-plinth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Reduced gap between logo and text */
+}
+
+.line {
+  width: 100vw;
+  height: 2px;
+  background-color: transparent;
+}
+
+.gdglogo {
+  width: 15rem; /* Reduced logo size */
+  margin-top: 10px; /* Reduced margin */
+}
+
+.gdg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.fest-plinth img {
+  height: 80px; /* Reduced logo height */
+}
+
+.festheads {
+  display: flex;
+  gap: 20px; /* Reduced gap between contacts */
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Reduced gap between social icons */
+  padding: 15px; /* Reduced padding */
+}
+
+.socialContainer {
+  width: 40px; /* Reduced icon size */
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+.containerOne:hover {
+  background-color: #d62976;
+}
+
+.containerTwo:hover {
+  background-color: #00acee;
+}
+
+.containerThree:hover {
+  background-color: #0072b1;
+}
+
+.containerFour:hover {
+  background-color: #128C7E;
+}
+
+.socialSvg {
+  width: 15px; /* Reduced SVG size */
+}
+
+.heads {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px; /* Reduced gap */
+  margin-left: 80px; /* Reduced margin */
+}
+
+.social-dev-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Reduced gap */
+  justify-content: center;
+  align-items: center;
+}
+
+.address {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; /* Reduced margin */
+  font-size: 0.9rem; /* Slightly reduced font size */
+}
+
+/* Mobile View */
+@media (max-width: 640px) {
+  .Footer {
+    flex-direction: column;
+    padding: 5px;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .festheads {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .address {
+    margin-top: 15px;
+  }
+
+  .fest-plinth img {
+    height: 50px;
+  }
+
+  .social-dev-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .heads{
+    margin-left: 0px;
+}
+}
