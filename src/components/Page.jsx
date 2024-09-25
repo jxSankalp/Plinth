@@ -63,11 +63,7 @@ const Page = () => {
       <div className="h-screen flex flex-col relative">
         {/* Glow SVG on top of the background, but below PLINTH text */}
         <div className="overflow-hidden glow1 top-[30rem] w-[60rem] h-[65rem] z-10">
-          <img
-            src={Glow}
-            alt="Plinth Glow"
-            className="h-full w-full"
-          />
+          <img src={Glow} alt="Plinth Glow" className="h-full w-full" />
         </div>
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pt-4 z-20">
@@ -83,19 +79,27 @@ const Page = () => {
             PLINTH
           </div>
 
-          <div className="xxv-container">
+          <div
+            onMouseMove={onMouseMove}
+            onMouseLeave={onMouseLeave}
+            style={{
+              transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg) scale3d(1, 1, 1)`,
+              transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
+            }}
+            className="xxv-container"
+          >
             <h1 className="xxv-text text-[4rem] sm:text-[3rem] md:text-[5.5rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem]">
-              {['X', 'X', 'V'].map((letter, index) => (
-                <motion.span 
-                  key={index} 
-                  className={`xxv-letter font-extrabold font-akira leading-none xxv-gradient`} 
+              {["X", "X", "V"].map((letter, index) => (
+                <motion.span
+                  key={index}
+                  className={`xxv-letter font-extrabold font-akira leading-none xxv-gradient`}
                   initial={{ opacity: 0, y: 100 }}
                   animate={showXXV ? { opacity: 1, y: 0 } : {}}
-                  transition={{ 
-                    duration: 1.5, 
-                    delay: showXXV ? index * 0.2 : 0, 
-                    type: "spring", 
-                    stiffness: 100 
+                  transition={{
+                    duration: 1.5,
+                    delay: showXXV ? index * 0.2 : 0,
+                    type: "spring",
+                    stiffness: 100,
                   }}
                 >
                   {letter}
@@ -114,7 +118,9 @@ const Page = () => {
             transition={{ duration: 1.5 }}
             className="h-[4rem] sm:h-[5rem] flex items-center justify-center"
           >
-            <h1 className="text-white text-[1rem] sm:text-[1.5rem] md:text-[2rem] tracking-[0.5rem] sm:tracking-[1rem] md:tracking-[1.5rem] font-kodchasan">coming soon</h1>
+            <h1 className="text-white text-[1rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[3rem] xl:text-[4rem] 2xl:text-[4.5rem] tracking-[0.5rem] sm:tracking-[1rem] md:tracking-[1.5rem] lg:tracking-[2rem] xl:tracking-[2.5rem] 2xl:tracking-[3rem] font-kodchasan">
+              COMING SOON
+            </h1>
           </motion.div>
         </div>
       </div>
