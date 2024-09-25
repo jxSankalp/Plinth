@@ -3,7 +3,7 @@ const Page2 = () => {
     <div className="w-[90vw] min-h-[100vh] mx-auto ">
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8">
         <img
-          src="src/assets/techfestphoto.jpg"
+          src="assets/techfestphoto.jpg"
           alt="Technorion Event"
           className="w-full md:w-1/2 h-auto mt-[3.4rem] rounded-lg shadow-lg"
         />
