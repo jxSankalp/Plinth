@@ -136,7 +136,7 @@ ul {
   .Footer {
     flex-direction: column;
     padding: 5px;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     justify-content: center;
     align-items: center;
     gap: 20px;
