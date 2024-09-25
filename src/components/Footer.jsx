@@ -63,14 +63,16 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="gdg">
-            <h2>Developed by:</h2>
-            <img className="gdglogo" src={gdglogo} alt="GDG logo" />
-          </div>
+          
         </div>
 
         {/* Address */}
         <div className="address">
+        <div className="gdg">
+            <h2>Developed & designed by:</h2>
+            
+          </div>
+          &nbsp;&nbsp;&nbsp;
           The LNM Institute of Information Technology,
           <br />
           Rupa ki Nangal, Post-Sumel, Via, Jamdoli, Jaipur, Rajasthan 302031

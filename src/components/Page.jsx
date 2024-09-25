@@ -1,9 +1,9 @@
 import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import Navbar from "./Navbar";
 import "./page.css";
 import { Glow } from "../assets/svg";
-
+import {arrow1} from "../assets/svg"
+import {arrow2} from "../assets/svg"
 function throttle(func, delay) {
   let lastCall = 0;
   return (...args) => {
@@ -58,15 +58,13 @@ const Page = () => {
 
   return (
     <>
-      <Navbar />
-
-      <div className="h-screen flex mt-[38rem] flex-col relative">
+      <div className="h-screen flex mt-[40rem] flex-col relative">
         {/* Glow SVG on top of the background, but below PLINTH text */}
         <div className="overflow-hidden glow1 top-[40rem] w-[60rem] h-[65rem] lg:top-[40rem] z-10 hidden md:block">
           <img src={Glow} alt="Plinth Glow" />
         </div>
 
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pt-4 z-20">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pt-8 z-20">
           <div
             onMouseMove={onMouseMove}
             onMouseLeave={onMouseLeave}
@@ -123,8 +121,26 @@ const Page = () => {
             </h1>
           </motion.div>
         </div>
-      </div>
-    </>
+        <div className="relative top-[39rem] flex flex-col items-center">
+          <div className="flex top-0 flex-col">
+            <h1>scroll down</h1>
+          </div>
+          <img
+            className="absolute top-[2rem] left-1/2 transform -translate-x-1/2 w-[2rem] h-[1rem]"
+            src={arrow1}
+            alt="Arrow 1"
+          />
+          <img
+            className="absolute top-[2.2rem] left-1/2 transform -translate-x-1/2 w-[2rem] h-[2rem]"
+            src={arrow2}
+            alt="Arrow 2"
+          />
+        </div>
+      </div >
+
+
+  
+</>
   );
 };
 
