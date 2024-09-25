@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logop from "../assets/plinthlogo.svg";
+import logop from "../assets/Plinthlogo.svg";
 import gdglogo from "../assets/gdglogo.png";
 import facebook from "../assets/facebook.png";
 import email from "../assets/email.png";
