@@ -62,8 +62,8 @@ const Page = () => {
 
       <div className="h-screen flex flex-col relative">
         {/* Glow SVG on top of the background, but below PLINTH text */}
-        <div className="overflow-hidden glow1 top-[30rem] w-[60rem] h-[65rem] z-10">
-          <img src={Glow} alt="Plinth Glow" className="h-full w-full" />
+        <div className="overflow-hidden glow1 top-[40rem] w-[60rem] h-[65rem] lg:top-[45rem] z-10">
+          <img src={Glow} alt="Plinth Glow" />
         </div>
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pt-4 z-20">
