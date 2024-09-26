@@ -72,7 +72,7 @@ const Page = () => {
               transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg) scale3d(1, 1, 1)`,
               transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
             }}
-            className="text-transparent bg-Green-gradient bg-clip-text text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem] font-extrabold font-akira leading-none tracking-[0.5rem] sm:tracking-[1.2rem] md:tracking-[1.7rem]"
+            className="text-transparent bg-Green-gradient bg-clip-text text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem] font-extrabold font-akira leading-none tracking-[0.5rem] sm:tracking-[1.2rem] md:tracking-[1.7rem] customBreakpoint:mt-[38rem] sm:mt-[30rem] md:mt-[20rem]"
           >
             PLINTH
           </div>
@@ -121,21 +121,22 @@ const Page = () => {
             </h1>
           </motion.div>
         </div>
-        <div className="relative top-[39rem] flex flex-col items-center">
-          <div className="flex top-0 flex-col">
-            <h1>scroll down</h1>
-          </div>
-          <img
-            className="absolute top-[2rem] left-1/2 transform -translate-x-1/2 w-[2rem] h-[1rem]"
-            src={arrow1}
-            alt="Arrow 1"
-          />
-          <img
+          <div className="relative top-[42rem] lg:mt-[5rem] 2xl:mt-[11rem] flex flex-col items-center customBreakpoint:hidden sm:flex ">
+            <div className="flex top-0 flex-col ">
+              <h1>scroll down</h1>
+            </div>
+            <img
+              className="absolute top-[2rem] left-1/2 transform -translate-x-1/2 w-[2rem] h-[1rem]"
+              src={arrow1}
+              alt="Arrow 1"
+            />
+            <img
             className="absolute top-[2.2rem] left-1/2 transform -translate-x-1/2 w-[2rem] h-[2rem]"
             src={arrow2}
             alt="Arrow 2"
-          />
+            />
         </div>
+        
       </div >
 
 

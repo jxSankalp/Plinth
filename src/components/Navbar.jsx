@@ -10,7 +10,7 @@ const Navbar = () => {
           className="h-[3rem] w-auto sm:h-[4rem] md:h-[5rem] lg:h-[6rem]"
         />
       </div>
-      <div className="px-[1rem]">
+      <div className="px-[1rem] flex flex-nowrap">
       <a className="px-[2rem]" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfi3vFurGQJFpAWGWFjvGR9tG2omPmWwB0M2XV1oHFicRAv6A/viewform?usp=sf_link">Sponsor Us</a>
 
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3RCof7TSVQChUKjZ0Yjr8BNYvpyDCeyTon09cy3M29EhiIw/viewform?usp=sf_link" target="_blank" >Register </a>
