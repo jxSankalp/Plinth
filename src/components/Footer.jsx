@@ -6,6 +6,7 @@ import facebook from "../assets/facebook.png";
 import email from "../assets/email.png";
 import linkdn from "../assets/linkedin.png";
 import insta from "../assets/instagram.png";
+import {gdg} from "../assets/svg";
 const Footer = () => {
   return (
     <div className="Footer_slide">
@@ -65,17 +66,21 @@ const Footer = () => {
 
           
         </div>
-
-        {/* Address */}
+        
         <div className="address">
-        <div className="gdg">
-            <h2>Developed & designed by:</h2>
-            
-          </div>
-          &nbsp;&nbsp;&nbsp;
+          <br />
           The LNM Institute of Information Technology,
           <br />
           Rupa ki Nangal, Post-Sumel, Via, Jamdoli, Jaipur, Rajasthan 302031
+        </div>
+
+        <div className="gdg w-[28rem] relative left-[24rem]">
+          <div className="w-[30rem] flex col">
+          <h2 className="pl-[2.5rem] pr-[0.6rem]">Designed and developed by: </h2>
+          <img className="w-[2.5rem] h-[2rem]" src={gdg} alt="" />
+            <h2 className="pl-[0.3rem]">GDG on campus</h2>
+          <br />
+          </div>
         </div>
       </div>
     </div>
