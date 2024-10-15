@@ -87,7 +87,7 @@ const Page2 = () => {
                     </p>
                     <div className="flex justify-center">
                         <a
-                            href="https://techtest.org/competitions"
+                            href="https://techfest.org/competitions"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
