@@ -44,7 +44,7 @@ const Page2 = () => {
 
 
                 <motion.img
-                    src="src/assets/techfestphoto.jpg"
+                    src={imagetechfest}
                     alt="Technorion Event"
                     className="w-[30rem] md:w-[30rem] h-auto rounded-lg shadow-lg mt-20"
                     variants={imageVariants}
