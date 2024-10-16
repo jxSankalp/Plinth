@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import imagetechfest from "../assets/techfestphoto.jpg"
 const Page2 = () => {
 
     const imageVariants = {
@@ -39,12 +39,12 @@ const Page2 = () => {
     };
 
     return (
-        <div className="w-[90vw] min-h-[70vh] mx-auto mt-20 lg:mt-36">
+        <div className="w-[90vw] overflow-hidden min-h-[70vh] mx-auto mt-20 lg:mt-36">
             <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8">
 
 
                 <motion.img
-                    src="src/assets/techfestphoto.jpg"
+                    src={imagetechfest}
                     alt="Technorion Event"
                     className="w-[30rem] md:w-[30rem] h-auto rounded-lg shadow-lg mt-20"
                     variants={imageVariants}
@@ -62,18 +62,18 @@ const Page2 = () => {
                     whileInView="visible"
                     viewport={{ once: false }}
                 >
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-red-600 mb-4 text-center font-akira ">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-Green-gradient bg-clip-text mb-4 text-center font-akira ">
                         Road to Plinth'25
                     </h2>
                     <p className="mb-4 text-gray-100 text-lg text-left leading-relaxed">
                         The future of technology is unfolding now. It’s not just on the
-                        horizon, it’s woven into the fabric of our present.🚀 QUANTZ ’24 in
+                        horizon, it’s woven into the fabric of our present. QUANTZ ’24 in
                         collaboration with TechFest, IIT Bombay, is thrilled to announce the
                         “Technorion Elimination Zonals ’24, Jaipur” hosted at LNMIIT.
                     </p>
                     <p className="mb-4 text-gray-100 text-lg text-left leading-relaxed">
-                        Prepare for an exciting lineup of events, from coding challenges 🧑‍💻
-                        to maze-solving competitions🤖.
+                        Prepare for an exciting lineup of events, from coding challenges
+                        to maze-solving competitions.
                     </p>
                     <p className="mb-4 text-gray-100 text-lg text-left leading-relaxed">
                         This is your call to action! 4 thrilling competitions and a massive
@@ -91,7 +91,7 @@ const Page2 = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <button className="bg-pink-600 hover:bg-pink-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out w-60">
+                            <button className="bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out w-60">
                                 Register Now
                             </button>
                         </a>

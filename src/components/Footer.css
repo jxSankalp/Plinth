@@ -3,16 +3,22 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgba(42, 42, 42, 0.63);
-  padding: 2rem 1.5rem;
+  background-color:transparent;
+  padding: 2rem 1.8rem;
   color: white;
-  box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px -1px 10px rgba(255, 255, 255, 0.5);
   align-items: flex-start;
   justify-content: space-between;
   width: 100vw;
   gap: 20px;
   position: absolute;
   top: 10vh;
+
+  /* Blur and transparency effects */
+  backdrop-filter: blur(5px); /* Applies the blur effect */
+  -webkit-backdrop-filter: blur(5px); /* For Safari support */
+  border-radius: 10px; /* Optional: Add rounded corners */
+
 }
 
 .Footer_slide {
@@ -34,7 +40,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px; /* Reduced gap between logo and text */
+  gap: 10px; /* Reduced gap between logo and text */
+  padding-top: 4rem;
+  font-size: x-large;
 }
 
 .line {
@@ -60,14 +68,13 @@ ul {
 }
 
 .fest-plinth img {
-  height: 80px; /* Reduced logo height */
+  height: 100px; /* Reduced logo height */
+  width: 100px;
 }
 
 .festheads {
   display: flex;
   gap: 20px; /* Reduced gap between contacts */
-  justify-content: center;
-  align-items: center;
 }
 
 .card {
@@ -114,8 +121,8 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-size: large;
   gap: 20px; /* Reduced gap */
-  margin-left: 80px; /* Reduced margin */
 }
 
 .social-dev-container {
@@ -129,8 +136,8 @@ ul {
 .address {
   width: 100%;
   text-align: center;
-  margin-top: 20px; /* Reduced margin */
-  font-size: 0.9rem; /* Slightly reduced font size */
+  margin-top: 0px; /* Reduced margin */
+  font-size: large; /* Slightly reduced font size */
 }
 
 /* Mobile View */

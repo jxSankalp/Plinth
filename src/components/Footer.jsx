@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 import logop from "../assets/PlinthLogo.svg";
 import gdglogo from "../assets/gdglogo.png";
@@ -6,7 +5,7 @@ import facebook from "../assets/facebook.png";
 import email from "../assets/email.png";
 import linkdn from "../assets/linkedin.png";
 import insta from "../assets/instagram.png";
-import {gdg} from "../assets/svg";
+import gdg from "../assets/gdg.svg"
 const Footer = () => {
   return (
     <div className="Footer_slide">
@@ -64,23 +63,22 @@ const Footer = () => {
             </div>
           </div>
 
-          
+          <div className="gdg bg-gray">
+            <h2>Developed by:</h2>
+  
+              <div className="flex items-center">
+                <img className="googledevgrp w-[2rem] mr-2" src={gdg} alt="GDG logo" />
+                <h3>Google developer groups on campus</h3>
+              </div>
+  
+          </div>
+
         </div>
-        
+
         <div className="address">
-          <br />
           The LNM Institute of Information Technology,
           <br />
           Rupa ki Nangal, Post-Sumel, Via, Jamdoli, Jaipur, Rajasthan 302031
-        </div>
-
-        <div className="gdg w-[28rem] relative left-[24rem]">
-          <div className="w-[30rem] flex col">
-          <h2 className="pl-[2.5rem] pr-[0.6rem]">Designed and developed by: </h2>
-          <img className="w-[2.5rem] h-[2rem]" src={gdg} alt="" />
-            <h2 className="pl-[0.3rem]">GDG on campus</h2>
-          <br />
-          </div>
         </div>
       </div>
     </div>

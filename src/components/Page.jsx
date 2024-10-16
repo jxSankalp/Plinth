@@ -121,20 +121,34 @@ const Page = () => {
             </h1>
           </motion.div>
         </div>
-          <div className="relative top-[42rem] lg:mt-[5rem] 2xl:mt-[11rem] flex flex-col items-center customBreakpoint:hidden sm:flex ">
-            <div className="flex top-0 flex-col ">
-              <h1>scroll down</h1>
-            </div>
-            <img
-              className="absolute top-[2rem] left-1/2 transform -translate-x-1/2 w-[2rem] h-[1rem]"
-              src={arrow1}
-              alt="Arrow 1"
-            />
-            <img
+
+        <div className="relative top-[42.8rem] lg:mt-[5rem] 2xl:mt-[11rem] flex flex-col items-center customBreakpoint:hidden sm:flex ">
+          <motion.img
+            className="absolute top-[2rem] left-1/2 transform -translate-x-1/2 w-[2rem] h-[1rem]"
+            src={arrow1}
+            alt="Arrow 1"
+            animate={{
+              y: [0, -10, 0],  
+            }}
+            transition={{
+              duration: 1.5,    
+              repeat: Infinity, 
+              repeatType: "loop", 
+            }}
+          />
+          <motion.img
             className="absolute top-[2.2rem] left-1/2 transform -translate-x-1/2 w-[2rem] h-[2rem]"
             src={arrow2}
             alt="Arrow 2"
-            />
+            animate={{
+              y: [0, -10, 0],  
+            }}
+            transition={{
+              duration: 1.5,   
+              repeat: Infinity, 
+              repeatType: "loop", 
+            }}
+          />
         </div>
         
       </div >
