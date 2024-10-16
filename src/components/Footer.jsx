@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div className="Footer">
         {/* Logo and Plinth'25 */}
-        <div className="fest-plinth">
+        <div className="fest-plinth ">
           <img className="plinthlogo" src={logop} alt="" />
           <h1>PLINTH' 2025</h1>
         </div>
@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="gdg bg-gray">
+          <div className="gdg left-[20rem] bg-gray">
             <h2>Developed by:</h2>
   
               <div className="flex items-center">

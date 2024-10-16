@@ -171,4 +171,25 @@ ul {
   .heads {
     margin-left: 0px;
   }
+
+}
+
+@media (min-width: 767px) and (max-width: 900px) {
+  .fest-plinth{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px; /* Reduced gap between logo and text */
+padding-top: 0rem;
+font-size: x-large;
+  }
+  .gdg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    right: 2px;
+  }
 }

@@ -58,24 +58,24 @@ const Page = () => {
 
   return (
     <>
-      <div className="h-screen flex mt-[30rem] flex-col relative">
-        {/* Glow SVG on top of the background, but below PLINTH text */}
-        <div className="overflow-hidden glow1 top-[40rem] w-[60rem] h-[65rem] lg:top-[40rem] z-10 hidden md:block">
-          <img src={Glow} alt="Plinth Glow" />
-        </div>
+      <div className="h-screen flex md:mt-[70rem] lg:mt-[35rem] mt-[35rem] flex-col relative">
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pt-8 z-20">
-          <div
-            onMouseMove={onMouseMove}
-            onMouseLeave={onMouseLeave}
-            style={{
-              transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg) scale3d(1, 1, 1)`,
-              transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
-            }}
-            className="text-transparent bg-Green-gradient bg-clip-text text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem] font-extrabold font-akira leading-none tracking-[0.5rem] sm:tracking-[1.2rem] md:tracking-[1.7rem] customBreakpoint:mt-[38rem] sm:mt-[30rem] md:mt-[20rem]"
-          >
-            PLINTH
-          </div>
+
+              <div
+                onMouseMove={onMouseMove}
+                onMouseLeave={onMouseLeave}
+                style={{
+                  transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg) scale3d(1, 1, 1)`,
+                  transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
+                }}
+                className="text-transparent bg-Green-gradient bg-clip-text text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem] font-extrabold font-akira leading-none tracking-[0.5rem] sm:tracking-[1.2rem] md:tracking-[1.7rem] customBreakpoint:mt-[38rem] sm:mt-[30rem] md:mt-[20rem]"
+              >
+                <div className="overflow-hidden glow1 md:w-[40rem] md:top-[33rem] lg:top-[26rem] lg:w-[60rem] top-[26rem] w-[60rem] h-[65rem] z-10 ">
+                  <img src={Glow} alt="Plinth Glow" />
+                </div>
+                    PLINTH
+              </div>
 
           <div
             onMouseMove={onMouseMove}
@@ -118,38 +118,43 @@ const Page = () => {
           >
             <h1 className="text-white text-[1rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[3rem] xl:text-[4rem] 2xl:text-[4.5rem] tracking-[0.5rem] sm:tracking-[1rem] md:tracking-[1.5rem] lg:tracking-[2rem] xl:tracking-[2.5rem] 2xl:tracking-[3rem] font-kodchasan">
               COMING SOON
+
             </h1>
+            
           </motion.div>
+
+          <div className=" mt-[2rem] 2xl:mt-[11rem] flex flex-col items-center customBreakpoint:hidden sm:flex ">
+              <motion.img
+                className=" mt-[0rem]  transform -translate-x-1/2  w-[2rem] "
+                src={arrow1}
+                alt="Arrow 1"
+                animate={{
+                  y: [0, -10, 0],  
+                }}
+                transition={{
+                  duration: 1.5,    
+                  repeat: Infinity, 
+                  repeatType: "loop", 
+                }}
+              />
+              <motion.img
+                className="  transform -translate-x-1/2 -translate-y-1/2 w-[2rem] "
+                src={arrow2}
+                alt="Arrow 2"
+                animate={{
+                  y: [0, -10, 0],  
+                }}
+                transition={{
+                  duration: 1.5,   
+                  repeat: Infinity, 
+                  repeatType: "loop", 
+                }}
+              />
+          </div>
+          
         </div>
 
-        <div className="relative top-[42.8rem] lg:mt-[5rem] 2xl:mt-[11rem] flex flex-col items-center customBreakpoint:hidden sm:flex ">
-          <motion.img
-            className="absolute top-[2rem] left-1/2 transform -translate-x-1/2 w-[2rem] h-[1rem]"
-            src={arrow1}
-            alt="Arrow 1"
-            animate={{
-              y: [0, -10, 0],  
-            }}
-            transition={{
-              duration: 1.5,    
-              repeat: Infinity, 
-              repeatType: "loop", 
-            }}
-          />
-          <motion.img
-            className="absolute top-[2.2rem] left-1/2 transform -translate-x-1/2 w-[2rem] h-[2rem]"
-            src={arrow2}
-            alt="Arrow 2"
-            animate={{
-              y: [0, -10, 0],  
-            }}
-            transition={{
-              duration: 1.5,   
-              repeat: Infinity, 
-              repeatType: "loop", 
-            }}
-          />
-        </div>
+        
         
       </div >
 

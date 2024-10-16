@@ -11,15 +11,6 @@
       blink-caret .35s step-end 4;
   }
   
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white }
-  }
 
   body {
     background-color: #000;
