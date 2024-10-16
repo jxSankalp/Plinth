@@ -44,7 +44,7 @@ const Page2 = () => {
 
 
                 <motion.img
-                    src={imagetechfest}
+                    src="src/assets/techfestphoto.jpg"
                     alt="Technorion Event"
                     className="w-[30rem] md:w-[30rem] h-auto rounded-lg shadow-lg mt-20"
                     variants={imageVariants}
@@ -87,7 +87,7 @@ const Page2 = () => {
                     </p>
                     <div className="flex justify-center">
                         <a
-                            href="https://techtest.org/competitions"
+                            href="https://techfest.org/competitions"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
