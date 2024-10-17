@@ -23,9 +23,9 @@ const App = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative w-screen min-h-screen">
       <CustomCursor />
-      <Navbar />
+      
       <ParticlesComponent id="particles" />
 
       
@@ -37,13 +37,14 @@ const App = () => {
       >
         <AnimatedPreloader />
       </div>
-
+      
       
       <div
         className={`transition-opacity duration-500 ease-in-out ${
           showContent ? 'opacity-100' : 'opacity-0'
         }`}
       >
+        <Navbar />
         <Page />
 
         <Suspense fallback={<div>Loading Page2...</div>}>
