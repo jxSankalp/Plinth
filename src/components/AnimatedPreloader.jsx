@@ -51,7 +51,7 @@ const AnimatedPreloader = () => {
   }, []);
 
   return (
-    <div className="flex w-screen h-screen bg-black items-center">
+    <div className="flex w-screen h-screen bg-transparent items-center">
       <div className="flex mx-auto flex-col sm:flex-row items-center sm:items-start">
         <div>
           <img src={Logo} className="size-28 w-[100px] sm:w-[150px]" id="logo" alt="Logo" />

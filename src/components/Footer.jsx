@@ -13,13 +13,11 @@ const Footer = () => {
       <div className="line"></div>
 
       <div className="Footer">
-        {/* Logo and Plinth'25 */}
         <div className="fest-plinth ">
           <img className="plinthlogo" src={logop} alt="" loading="lazy" />
           <h1>PLINTH' 2025</h1>
         </div>
 
-        {/* Contact Information */}
         <div className="heads">
           <h2>Contact Us</h2>
           <ul className="festheads">
@@ -32,7 +30,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Follow us and Developed by */}
         <div className="social-dev-container">
           <div className="container1">
             <h2>Follow us on:</h2>

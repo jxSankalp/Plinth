@@ -48,7 +48,7 @@ const Page2 = () => {
           whileInView="visible"
           viewport={{ once: false }}
           animate={floatingEffect}
-          loading="lazy" // Lazy load the image
+          loading="lazy" 
         />
 
         <motion.div

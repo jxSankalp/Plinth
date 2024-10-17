@@ -6,7 +6,6 @@ import Page from "./components/Page";
 import Navbar from "./components/Navbar";
 import AnimatedPreloader from "./components/AnimatedPreloader";
 
-// Lazy load components
 const Page2 = React.lazy(() => import('./components/Page2'));
 const Footer = React.lazy(() => import('./components/Footer'));
 
@@ -29,7 +28,7 @@ const App = () => {
       <Navbar />
       <ParticlesComponent id="particles" />
 
-      {/* Preloader */}
+      
       <div
         className="fixed inset-0 z-50 bg-transparent transition-transform duration-1000 ease-in-out"
         style={{
@@ -39,7 +38,7 @@ const App = () => {
         <AnimatedPreloader />
       </div>
 
-      {/* Main Content */}
+      
       <div
         className={`transition-opacity duration-500 ease-in-out ${
           showContent ? 'opacity-100' : 'opacity-0'
@@ -47,7 +46,6 @@ const App = () => {
       >
         <Page />
 
-        {/* Lazy-loaded components with Suspense */}
         <Suspense fallback={<div>Loading Page2...</div>}>
           <Page2 />
         </Suspense>
