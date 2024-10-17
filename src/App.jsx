@@ -31,7 +31,7 @@ const App = () => {
 
       {/* Preloader */}
       <div
-        className="fixed inset-0 z-50 bg-black transition-transform duration-1000 ease-in-out"
+        className="fixed inset-0 z-50 bg-transparent transition-transform duration-1000 ease-in-out"
         style={{
           transform: isPreloading ? 'translateY(0)' : 'translateY(-100%)',
         }}
