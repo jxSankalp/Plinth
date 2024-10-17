@@ -37,18 +37,18 @@ const Page2 = () => {
   };
 
   return (
-    <div className="w-[90vw] overflow-hidden min-h-[70vh] mx-auto md:mt-[3rem] lg:mt-[12rem]">
+    <div className="w-[90vw] overflow-hidden min-h-[70vh] mx-auto xsm:mt-[15rem] md:mt-[3rem] lg:mt-[12rem]">
       <div className="flex flex-col lg:flex-row md:flex-col justify-center items-center md:items-start gap-8">
         <motion.img
           src={imagetechfest}
           alt="Technorion Event"
-          className="lg:w-[30rem] md:w-[40rem] h-auto rounded-lg shadow-lg mt-20"
+          className="lg:w-[30rem] md:w-[40rem] h-auto rounded-lg shadow-lg xsm:mt-[1rem] md:mt-[6rem] mt-[5rem]"
           variants={imageVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false }}
           animate={floatingEffect}
-          loading="lazy" 
+          loading="lazy" // Lazy load the image
         />
 
         <motion.div
