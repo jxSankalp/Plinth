@@ -31,6 +31,7 @@ const Footer = () => {
         </div>
 
         <div className="social-dev-container">
+
           <div className="container1">
             <h2>Follow us on:</h2>
             <div className="card">
@@ -61,19 +62,31 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="gdg left-[20rem] bg-gray">
-            <h2>Developed by:</h2>
+          <div className="gdg flex flex-col left-[20rem] bg-gray">
 
-            <div className="flex items-center">
-              <img
-                className="googledevgrp w-[2rem] mr-2"
-                src={gdg}
-                alt="GDG logo"
-                loading="lazy"
-              />
-              <h3>Google developer groups on campus</h3>
+            <div>
+              <h2> Developed by: </h2>
             </div>
+
+            <div className="flex flex-row items-center">
+
+              <div className="flex w-[2rem] mr-[0.1rem] md:mr-[0.5rem]">
+                <img
+                  className="googledevgrp w-full "
+                  src={gdg}
+                  alt="GDG logo"
+                  loading="lazy"
+                />
+              </div>
+
+              <div className="flex">
+                  <h3>Google developer groups on campus</h3>
+              </div>
+
+            </div>
+
           </div>
+
         </div>
 
         <div className="address">
