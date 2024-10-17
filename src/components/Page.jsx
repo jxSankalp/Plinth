@@ -58,7 +58,7 @@ const Page = () => {
 
   return (
     <>
-      <div className="h-screen flex md:mt-[70rem] xsm:mt-[60rem] 2xl:mt-[55rem] lg:mt-[35rem] mt-[35rem] flex-col relative">
+      <div className="h-screen flex md:mt-[70rem] xsm:mt-[60rem] 2xl:mt-[40rem] lg:mt-[35rem] mt-[35rem] flex-col relative">
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pt-8 z-20">
 
