@@ -27,6 +27,9 @@ export default {
         slideIn: "slideIn 1.0s ease-out forwards",
         fadeInScale: "fadeInScale 2.0s ease-in-out forwards",
       },
+      colors: {
+        'neon': '#9EE428',
+      },
     },
     screens: {
       "sm": "576px", // Small devices (phones, ≥ 576px)

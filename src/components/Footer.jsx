@@ -5,7 +5,8 @@ import facebook from "../assets/facebook.png";
 import email from "../assets/email.png";
 import linkdn from "../assets/linkedin.png";
 import insta from "../assets/instagram.png";
-import gdg from "../assets/gdg.svg"
+import gdg from "../assets/gdg.svg";
+
 const Footer = () => {
   return (
     <div className="Footer_slide">
@@ -14,7 +15,7 @@ const Footer = () => {
       <div className="Footer">
         {/* Logo and Plinth'25 */}
         <div className="fest-plinth ">
-          <img className="plinthlogo" src={logop} alt="" />
+          <img className="plinthlogo" src={logop} alt="" loading="lazy" />
           <h1>PLINTH' 2025</h1>
         </div>
 
@@ -40,39 +41,42 @@ const Footer = () => {
                 className="socialContainer containerOne"
                 href="https://www.instagram.com/plinth.lnmiit/?hl=en"
               >
-                <img src={insta} alt="" />
+                <img src={insta} alt="" loading="lazy" />
               </a>
               <a
                 className="socialContainer containerTwo"
                 href="https://www.facebook.com/Plinth.LNMIIT/"
               >
-                <img src={facebook} alt="" />
+                <img src={facebook} alt="" loading="lazy" />
               </a>
               <a
                 className="socialContainer containerThree"
                 href="https://www.linkedin.com/company/plinthlnmiit/?originalSubdomain=in"
               >
-                <img src={linkdn} alt="" />
+                <img src={linkdn} alt="" loading="lazy" />
               </a>
               <a
                 className="socialContainer containerFour"
                 href="mailto:plinth@lnmiit.ac.in"
               >
-                <img src={email} alt="Email Icon" />
+                <img src={email} alt="Email Icon" loading="lazy" />
               </a>
             </div>
           </div>
 
           <div className="gdg left-[20rem] bg-gray">
             <h2>Developed by:</h2>
-  
-              <div className="flex items-center">
-                <img className="googledevgrp w-[2rem] mr-2" src={gdg} alt="GDG logo" />
-                <h3>Google developer groups on campus</h3>
-              </div>
-  
-          </div>
 
+            <div className="flex items-center">
+              <img
+                className="googledevgrp w-[2rem] mr-2"
+                src={gdg}
+                alt="GDG logo"
+                loading="lazy"
+              />
+              <h3>Google developer groups on campus</h3>
+            </div>
+          </div>
         </div>
 
         <div className="address">

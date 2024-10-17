@@ -2,7 +2,7 @@ import { PlinthLogo } from "../assets/svg";
 
 const Navbar = () => {
   return (
-    <div className="fixed md:top-[0rem] top-2 left-0 w-full text-white flex items-center justify-between h-[4rem] sm:h-[5rem] px-4 sm:px-8 md:px-16 lg:px-20 z-50 bg-transparent">
+    <div className="fixed md:top-[0.6rem] top-[0.5rem] left-0 w-full text-white flex items-center justify-between h-[4rem] sm:h-[5rem] px-4 sm:px-8 md:px-16 lg:px-20 z-50 bg-transparent">
       <div className="flex items-center">
         <img
           src={PlinthLogo}
