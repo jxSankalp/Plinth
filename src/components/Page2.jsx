@@ -38,11 +38,12 @@ const Page2 = () => {
 
   return (
     <div className="w-[90vw] overflow-hidden min-h-[70vh] mx-auto xsm:mt-[15rem] md:mt-[3rem] lg:mt-[12rem]">
-      <div className="flex flex-col lg:flex-row md:flex-col justify-center items-center md:items-start gap-8">
+      <div className="flex flex-col uxl:w-[80rem] lg:flex-row md:flex-col justify-center items-center md:items-start gap-8">
+        
         <motion.img
           src={imagetechfest}
           alt="Technorion Event"
-          className="lg:w-[30rem] md:w-[40rem] h-auto rounded-lg shadow-lg xsm:mt-[1rem] md:mt-[6rem] mt-[5rem]"
+          className="lg:w-[30rem] uxl:ml-[10rem] md:w-[40rem] h-auto rounded-lg shadow-lg xsm:mt-[1rem] md:mt-[6rem] mt-[5rem]"
           variants={imageVariants}
           initial="hidden"
           whileInView="visible"
@@ -52,7 +53,7 @@ const Page2 = () => {
         />
 
         <motion.div
-          className="w-full md:w-full p-6 text-center md:text-left bg-white/10 backdrop-blur-lg border border-white/30 rounded-[1.5rem] shadow-lg mt-12 opacity-90"
+          className="w-full uxl:translate-x-[15rem] md:w-full p-6 text-center md:text-left bg-white/10 backdrop-blur-lg border border-white/30 rounded-[1.5rem] shadow-lg mt-12 opacity-90"
           variants={contentVariants}
           initial="hidden"
           whileInView="visible"

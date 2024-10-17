@@ -39,6 +39,7 @@ export default {
       "xl": "1200px", // Extra large devices (large desktops, ≥ 1200px)
       "2xl": "1400px", // Extra extra large devices (larger desktops, ≥ 1400px)
       'customBreakpoint': '240px',
+      "uxl": "1500px"
 
     },
   },
