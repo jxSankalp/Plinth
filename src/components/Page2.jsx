@@ -59,7 +59,7 @@ const Page2 = () => {
           whileInView="visible"
           viewport={{ once: false }}
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-Green-gradient bg-clip-text mb-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-green-600 bg-clip-text mb-4 text-center">
             Road to Plinth'25
           </h2>
           <p className="mb-4 text-gray-100 text-lg text-left leading-relaxed">

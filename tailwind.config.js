@@ -7,7 +7,7 @@ export default {
         "Green-gradient":
           "linear-gradient(90deg, #75B700 0%, #456B02 6.4%, #97E50E 12.4%, #75B700 16.4%, #E1FEAD 24.9%, #82B22D 28.4%, #95E110 48%, #365400 55.9%, #96E30F 60.98%, #8BD30C 66.4%, #C2FD5B 72.39%, #97E50E 83.4%, #97E50E 91.4%, #235300 100%)",
         "White-gradient":
-          "linear-gradient(90deg, #FEF7FF 0%, #A2A0A2 7%, #EEEEEE 10.5%, #A2A0A2 22%, #FFFFFF 40.5%, #7E7E7E 52%, #BFBFBF 60.5%, #939393 80.5%, #FFFFFF 90%, #989499 100%)",
+          "linear-gradient(90deg, #FEF7FF 0%, #A2A0A2 7%, #EEEEEE 10.5%, #A2A0A2 22%, #FFFFFF 40.5%, #7E7E7E 52%, #BFBFBF 60.5%, #939393 80.5%, #FFFFFF 90%, #989499 100%)", 
       },
       fontFamily: {
         akira: ['"Akira Expanded"', "sans-serif"],

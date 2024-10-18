@@ -11,9 +11,9 @@ const Navbar = () => {
         />
       </div>
       <div className="px-[1rem] flex flex-nowrap">
-      <a className="px-[2rem]" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfi3vFurGQJFpAWGWFjvGR9tG2omPmWwB0M2XV1oHFicRAv6A/viewform?usp=sf_link">Sponsor Us</a>
+      <a className="px-[2rem] text-lg font-semibold" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfi3vFurGQJFpAWGWFjvGR9tG2omPmWwB0M2XV1oHFicRAv6A/viewform?usp=sf_link">Sponsor Us</a>
 
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3RCof7TSVQChUKjZ0Yjr8BNYvpyDCeyTon09cy3M29EhiIw/viewform?usp=sf_link" target="_blank" >Register </a>
+      <a className="font-semibold text-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSe3RCof7TSVQChUKjZ0Yjr8BNYvpyDCeyTon09cy3M29EhiIw/viewform?usp=sf_link" target="_blank" >Register </a>
       </div>
       
     </div>
