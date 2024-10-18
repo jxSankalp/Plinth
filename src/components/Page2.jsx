@@ -59,20 +59,20 @@ const Page2 = () => {
           whileInView="visible"
           viewport={{ once: false }}
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-green-600 bg-clip-text mb-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-extrabold select-none text-green-600 bg-clip-text mb-4 text-center">
             Road to Plinth'25
           </h2>
-          <p className="mb-4 text-gray-100 text-lg text-left leading-relaxed">
+          <p className="mb-4 select-none text-gray-100 text-lg text-left leading-relaxed">
             The future of technology is unfolding now. It’s not just on the
             horizon, it’s woven into the fabric of our present. QUANTZ ’24 in
             collaboration with TechFest, IIT Bombay, is thrilled to announce the
             “Technorion Elimination Zonals ’24, Jaipur” hosted at LNMIIT.
           </p>
-          <p className="mb-4 text-gray-100 text-lg text-left leading-relaxed">
+          <p className="mb-4 select-none text-gray-100 text-lg text-left leading-relaxed">
             Prepare for an exciting lineup of events, from coding challenges to
             maze-solving competitions.
           </p>
-          <p className="mb-4 text-gray-100 text-lg text-left leading-relaxed">
+          <p className="mb-4 select-none text-gray-100 text-lg text-left leading-relaxed">
             This is your call to action! 4 thrilling competitions and a massive
             prize pool of 2.5 lakhs INR are still up for grabs. Prove your mettle
             in these ultimate tech battles and earn your spot in the grand
